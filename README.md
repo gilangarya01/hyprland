@@ -9,7 +9,9 @@ This repository contains my personal configuration files (dotfiles) for Hyprland
 ### How To Use
 
 1. Install Package
-sudo pacman -S hyprland waybar hyprpaper wlogout rofi kitty fastfetch thunar
+   ```sh
+   sudo pacman -S hyprland waybar hyprpaper wlogout rofi kitty fastfetch thunar
+   ```
 
 1. **Clone the Repository**
 
