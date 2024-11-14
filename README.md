@@ -1,20 +1,38 @@
-## Hyprland Dotfiles
+# Hyprland Dotfiles
 
 ![image](./preview.png)
 
-### Decription
+This repository contains configuration files (dotfiles) for setting up a custom Hyprland environment on Wayland. The configuration focuses on a modern, efficient, and visually cohesive setup, optimized for functionality and aesthetics.
 
-This repository contains my personal configuration files (dotfiles) for Hyprland. These dotfiles help me keep my environment consistent across different machines and can be easily shared or restored.
+## Features
+- **Hyprland Customization**: Includes configurations for bar layout, themes, keyboard shortcuts, and etc.
+    - OS: Arch Linux
+    - WM: Hyprland
+    - Shell: zsh
+    - Terminal: kitty
+    - Bar: waybar
+    - Application Launcher: rofi
 
-### How To Use
+## Installation
+#### 1. Install Dependencies
+You may need to install some Hyprland components and optional packages. Use the following command on Arch-based systems:
+```bash
+sudo pacman -S hyprland waybar hyprpaper wlogout rofi kitty fastfetch thunar
+```
 
-1. Install Package
-   ```sh
-   sudo pacman -S hyprland waybar hyprpaper wlogout rofi kitty fastfetch thunar
-   ```
+#### 2. Clone the Repository
+Clone this repository to your home directory:
+```bash
+git clone https://github.com/gilangarya01/hyprland-dotfiles.git
+cd ~/hyprland-dotfiles
+```
 
-1. **Clone the Repository**
+#### 3. Copy or Rsync Dotfiles
+```bash
+cp -r ./ ~/
+# or
+rsync -av ./ ~/
+```
+Log out and log back in, or restart your system.
 
-   ```sh
-   git clone https://github.com/gilangarya01/arch-xfce-dotfiles.git ~/
-    ```
+
