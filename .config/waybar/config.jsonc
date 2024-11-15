@@ -1,6 +1,6 @@
 {
   "layer": "top",
-    "modules-left": ["hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces", "custom/screenshots"],
     "modules-center": ["clock"],
     "modules-right": ["backlight", "pulseaudio", "tray", "battery", "custom/wlogout"],
     "hyprland/workspaces": {
@@ -12,6 +12,12 @@
         "active": "",
         "default": ""
       }
+    },
+    "custom/screenshots": {
+      "interval": 600,
+      "on-click": "grim",
+      "tooltip": false,
+      "format": "󰄀",
     },
     "clock": {
       "format": "<span color='#b4befe'></span>{:%H:%M}",

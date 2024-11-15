@@ -1,6 +1,0 @@
-@theme "/home/gilang/.local/share/rofi/themes/rounded-dark.rasi"
-
-configuration {
-    show-icons: true;
-    display-drun: "";
-}

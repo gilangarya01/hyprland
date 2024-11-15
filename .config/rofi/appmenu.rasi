@@ -1,0 +1,101 @@
+
+configuration {
+    show-icons:                     true;
+    drun-display-format:            "{name}";
+    display-drun: "";
+}
+
+* {
+  al:  #00000000;
+  bg:  #092128;
+  fg:  #ffffff;
+  se:  #3a454a;
+  br:  #fee0b1;
+}
+
+window {
+    background-color:               @bg;
+    text-color:                     @fg;
+	border:							1px;
+	border-color:					@br;
+    border-radius:                  15px;
+	height:						    52%;
+	width:							50%;
+    location:                       center;
+}
+
+prompt {
+    enabled: 						true;
+	background-color: 				@al;
+	text-color: 					@fg;
+}
+
+entry {
+    background-color:               @al;
+    text-color:                     @fg;
+    placeholder-color:              @fg;
+    expand:                         true;
+    horizontal-align:               0;
+    placeholder:                    "Search";
+    padding:                        0.10% 0% 0% 0%;
+    blink:                          true;
+}
+
+inputbar {
+	children: 						[ prompt, entry ];
+    background-color:               @bg;
+    text-color:                     @bg;
+    expand:                         false;
+	border:							0% 0% 0% 0%;
+    border-radius:                  0px;
+    margin:                         0% 0% 0% 0%;
+    padding:                        1.6% 1.6% 1.1% 1.6%;
+}
+
+listview {
+    background-color:               @al;
+    padding:                        0px;
+    columns:                        2;
+    spacing:                        0%;
+    cycle:                          false;
+    dynamic:                        true;
+    layout:                         vertical;
+}
+
+mainbox {
+    background-color:               @al;
+    children:                       [ inputbar, listview ];
+}
+
+element {
+    background-color:               @al;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  0%;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+element-icon {
+    background-color: 				inherit;
+    text-color:       				inherit;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    size:                           28px;
+    border:                         0px;
+    padding:                        0 10px 0 10px;
+}
+
+element-text {
+    background-color: 				@al;
+    text-color:       				inherit;
+    expand:                         true;
+    horizontal-align:               0;
+    vertical-align:                 0.5;
+    margin:                         0% 0.25% 0% 0.25%;
+}
+
+element selected {
+    background-color:               @se;
+    text-color:                     @fg;
+    border-color:                  	@bg;
+}
