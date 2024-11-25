@@ -17,7 +17,7 @@ This repository contains configuration files (dotfiles) for setting up a custom 
 #### 1. Install Dependencies
 You may need to install some Hyprland components and optional packages. Use the following command on Arch-based systems:
 ```bash
-sudo pacman -S hyprland waybar hyprpaper wlogout rofi grim kitty fastfetch thunar
+yay -S hyprland waybar hyprpaper wlogout rofi grim kitty fastfetch thunar
 ```
 
 #### 2. Clone the Repository
